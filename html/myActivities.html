@@ -34,8 +34,10 @@
             padding: 20px;
             background: linear-gradient(45deg, #182c25, #8fb89c);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            min-height: calc(100vh - 70px);
             position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Set min-height to 100vh */
         }
 
         .text-content {
@@ -54,10 +56,10 @@
         .person {
             flex: 1;
             text-align: center;
-            border: none; /* Remove the border */
-            margin: 0; /* Remove margin */
+            border: none;
+            margin: 0;
             width: calc(33.33% - 20px);
-            box-sizing: border-box; /* Include padding in width calculation */
+            box-sizing: border-box;
         }
 
         .person img {
@@ -89,6 +91,17 @@
             border-radius: 10px;
             margin: 10px 0;
         }
+
+        footer {
+            background: linear-gradient(45deg, #182c25, #8fb89c);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            transition: bottom 0.3s;
+        }
     </style>
 
     <title>My Activity</title>
@@ -111,8 +124,8 @@
 
             <div class="activity">
                 <h3>My Activity</h3>
-                <p>I like to play music with my friend a lot, I used to have a band back when I was in Highschool and It's called Serum. 
-                    We've been to a lot of places to play our music such as Siam, The Mall, Major Ratchayothin, Samyan Midtown,etc.</p>
+                <p>I like to play music with my friend a lot, I used to have a band back when I was in Highschool and It's called Serum.
+                    We've been to a lot of places to play our music such as Siam, The Mall, Major Ratchayothin, Samyan Midtown, etc.</p>
                 <img src="../image/im1.jpg" alt="Image 1-1" />
                 <img src="../image/im2.jpg" alt="Image 1-2" />
                 <img src="../image/im5.jpg" alt="Image 1-3" />
