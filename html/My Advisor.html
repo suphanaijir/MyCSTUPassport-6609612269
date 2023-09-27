@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(45deg, #182c25, #8fb89c);
+            margin: 0;
+            padding: 0;
+            position: relative;
+            padding-bottom: 70px;
+            background-image: url('image/background_rest.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        nav {
+            text-align: center;
+            background: linear-gradient(45deg, #182c25, #8fb89c);
+        }
+
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #ffcc00;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(45deg, #182c25, #8fb89c);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            min-height: calc(100vh - 70px);
+            position: relative;
+        }
+
+        .text-content {
+            flex: 1;
+            color: white;
+        }
+
+        .media-container {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .person {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .person img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .person p {
+            color: black;
+            margin: 10px 0;
+        }
+
+        .person strong {
+            color: #ffcc00;
+        }
+
+        footer {
+            background: linear-gradient(45deg, #182c25, #8fb89c);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            transition: bottom 0.3s;
+        }
+
+        .push-content {
+            margin-bottom: 70px;
+        }
+
+    </style>
+
+    <title>Two People's Profiles</title>
+</head>
+
+<body>
+
+    <header
+        style="background-image: url('image/header_background.png'); background-size: auto; background-position: 50%; color: white; text-align: center; padding: 60px 0 120px 0; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"
+    >
+    </header>
+
+    <nav>
+        <a href="#"><strong>Home</strong></a> |
+        <a href="#"><strong>My Advisor</strong></a> |
+        <a href="#"><strong>My Activity</strong></a>
+    </nav>
+
+    <div class="container push-content">
+        <div class="media-container">
+            <div class="person">
+                <a href="https://cs.sci.tu.ac.th/2022/02/04/profile-%e0%b8%a7%e0%b8%99%e0%b8%b4%e0%b8%94%e0%b8%b2-%e0%b8%9e%e0%b8%a4%e0%b8%97%e0%b8%98%e0%b8%b4%e0%b8%a7%e0%b8%b4%e0%b8%97%e0%b8%a2%e0%b8%b2/">
+                    <img src="image/Prof.Dr. Wanida.jpg" alt="Asst.Prof.Dr. Wanida Putthividhya" />
+                </a>
+                <p class="introduction-text"><strong>Asst.Prof.Dr. Wanida Putthividhya</strong>
+                    <br><strong>Contact information</strong>
+                    <ul>
+                        <li>อาคาร LC-2 ชั้น 2 ห้อง 210</li>
+                        <li>0-2986-9156 ต่อ 230</li>
+                        <li>wanidap@cs.tu.ac.th</li>
+                    </ul>
+                    <strong>Research Interest</strong>
+                    <ul>
+                        <li>Software economics</li>
+                        <li>Quality of Service (QOS)</li>
+                        <li>Congestion Control</li>
+                        <li>Network Security and Operating Systems</li>
+                    </ul>
+                    <strong>Education</strong>
+                    <ul>
+                        <li>Ph.D. (Computer Science), Iowa State University, USA, 2549</li>
+                        <li>M.S. (Computer Science), University of Southern California, USA, 2543</li>
+                        <li>วท.บ. (ศาสตร์คอมพิวเตอร์) (เกียรตินิยมอันดับหนึ่งเหรียญทอง), มหาวิทยาลัยเกษตรศาสตร์, ประเทศไทย, 2539</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="person">
+                <a href="https://cs.sci.tu.ac.th/2022/01/24/monvorath/">
+                    <img src="image/Prof.Dr. Monvorarat.jpg" alt="Asst.Prof.Dr. Monvorarat Pongpaiboon" />
+                </a>
+                <p class="introduction-text"><strong>Asst.Prof.Dr. Monvorarat Pongpaiboon</strong>
+                    <br><strong>Contact information</strong>
+                    <ul>
+                        <li>อาคาร LC-2 ชั้น 2 ห้อง 210</li>
+                        <li>0-2986-9156 ต่อ 230</li>
+                        <li>wanidap@cs.tu.ac.th</li>
+                    </ul>
+                    <strong>Research Interest</strong>
+                    <ul>
+                        <li>Software economics</li>
+                        <li>Software process and improvement</li>
+                        <li>Software metrics</li>
+                        <li>Process simulation</li>
+                    </ul>
+                    <strong>Education</strong>
+                    <ul>
+                        <li>Ph.D. (Computer Science) University of Southern California, USA, 2550</li>
+                        <li>M.S. (Computer Science), University of Southern California, USA, 2550</li>
+                        <li>วท.บ. (ศาสตร์คอมพิวเตอร์) มหาวิทยาลัยธรรมศาสตร์, ประเทศไทย, 2541</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Suphanai Jirakankun
+    </footer>
+
+</body>
+
+</html>
