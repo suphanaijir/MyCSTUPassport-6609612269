@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -129,6 +130,36 @@
         .push-content {
             margin-bottom: 70px;
         }
+
+        /* Media query for smaller screens (e.g., mobile devices) */
+        @media (max-width: 768px) {
+            body {
+                background-image: none;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .rounded-image {
+                width: 100px;
+                height: 100px;
+            }
+
+            .video-intro video {
+                width: 100%;
+            }
+
+            .introduction-text,
+            .facts-text {
+                font-size: 16px;
+            }
+
+            .social-icons a {
+                width: 20px;
+                height: 20px;
+            }
+        }
     </style>
 
     <title>Homepage</title>
@@ -137,10 +168,9 @@
 <body>
 
     <header
-    style="background-image: url('image/header_background.png'); background-size: auto; background-position: 50%; color: white; text-align: center; padding: 60px 0 120px 0; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"
->
+        style="background-image: url('image/header_background.png'); background-size: auto; background-position: 50%; color: white; text-align: center; padding: 60px 0 120px 0; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"
+    >
     </header>
-
 
     <nav>
         <a href="https://suphanaijir.github.io/MyCSTUPassport-6609612269/"><strong>Home</strong></a> |
@@ -187,9 +217,9 @@
     <footer>
         <div class="social-icons">
             <a href="https://www.instagram.com/naisu.j/" target="_blank"><img src="image/instagram.png" alt="Instagram"
-                    width="20" height="20"></a>
+                width="20" height="20"></a>
             <a href="https://open.spotify.com/user/31fnu4x7bbkiwbmflirilwwkh4xe" target="_blank"><img
-                    src="image/spotify.png" alt="spotify" width="30" height="30"></a>
+                src="image/spotify.png" alt="spotify" width="30" height="30"></a>
         </div>
         &copy; 2023 Suphanai Jirakankun
     </footer>
