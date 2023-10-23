@@ -17,16 +17,32 @@
             background-repeat: no-repeat;
         }
 
-        nav {
-            text-align: center;
-            background: linear-gradient(45deg, #182c25, #8fb89c);
+        .navbar-container {
+            position: absolute;
+            left: -20px;
+            top: 155px;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 20px 10px;
+            
         }
 
-        nav a {
-            display: inline-block;
-            padding: 10px 20px;
+        .navbar-item {
+            display: block;
+            padding: 10px 90px;
             text-decoration: none;
             color: #ffcc00;
+            margin: 10px;
+            background: linear-gradient(45deg, #182c25, #8fb89c);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .navbar-item:hover {
+            background: #ffcc00;
+            color: #000;
         }
 
         mark {
@@ -49,11 +65,12 @@
         }
 
         .media-container {
-            text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-align: center;
+            height: 100%;
         }
 
         .additional-text {
@@ -130,31 +147,23 @@
         .push-content {
             margin-bottom: 70px;
         }
+
         header {
             display: flex;
             justify-content: center;
             align-items: center;
             background-image: url('image/header_background.png');
-            background-size: auto;
+            background-size: cover;
             background-position: 50%;
             color: white;
             text-align: center;
             padding: 60px 0 120px 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-        @media (max-width: 768px) {
-            header {
-                background-image: url('image/mobile_header.png');
-                background-size: cover;
-                padding: 30px 0 60px 0;
-            }
-            body {
-                background-image: url('image/background_intro.png');
-                background-size: cover;
-            }
 
+        @media (max-width: 768px) {
             .container {
                 padding: 10px;
+                margin-left: 0;
             }
 
             .rounded-image {
@@ -175,8 +184,68 @@
                 width: 20px;
                 height: 20px;
             }
+
             .text-content p {
                 font-size: 12px;
+            }
+
+            .navbar-container {
+                left: -20px;
+                top: 155px;
+            }
+
+            .navbar-item {
+                padding: 10px 30px;
+                text-align: center;
+                margin: 5px;
+                display: block;
+            }
+            
+        }
+
+        @media (max-width: 480px) {
+            .navbar-container {
+                left: -10px;
+                top: 171px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 98%;
+            }
+
+            .navbar-item {
+                display: block;
+                padding: 10px;
+                text-align: center;
+                margin: 1px;
+                font-size: 11px;
+            }
+
+            .introduction-text,
+            .facts-text {
+                font-size: 12px;
+            }
+
+            .rounded-image {
+                width: 80px;
+                height: 80px;
+            }
+
+            .video-intro video {
+                width: 100%;
+            }
+
+            .social-icons a {
+                width: 20px;
+                height: 20px;
+            }
+
+            .text-content p {
+                font-size: 12px;
+            }
+            .push-content {
+                margin-top: 120px;
             }
         }
     </style>
@@ -185,16 +254,16 @@
 </head>
 
 <body>
-
-    <header
-    >
+    <header>
     </header>
 
-    <nav>
-        <a href="https://suphanaijir.github.io/MyCSTUPassport-6609612269/"><strong>Home</strong></a> |
-        <a href="https://suphanaijir.github.io/MyCSTUPassport-6609612269/html/myAdvisor.html"><strong>My Advisor</strong></a> |
-        <a href="https://suphanaijir.github.io/MyCSTUPassport-6609612269/html/myActivities.html"><strong>My Activity</strong></a>
-    </nav>
+    <div class="navbar-container">
+        <a class="navbar-item" href="https://suphanaijir.github.io/MyCSTUPassport-6609612269/"><strong>Home</strong></a>
+        <a class="navbar-item"
+            href="https://suphanaijir.github.io/MyCSTUPassport-6609612269/html/myAdvisor.html"><strong>My Advisor</strong></a>
+        <a class="navbar-item"
+            href="https://suphanaijir.github.io/MyCSTUPassport-6609612269/html/myActivities.html"><strong>My Activity</strong></a>
+    </div>
 
     <div class="container push-content">
         <div class="media-container">
@@ -213,12 +282,12 @@
             </div>
             <div class="additional-text">
                 <p class="facts-text">Fun Facts About Me</p>
-                <p><strong>My favourite Food is</strong> Noodle
-                    <br><strong>My favourite Movie is</strong> Forrest Gump !
-                    <br><strong>My favourite Artist is</strong> The Beatles and Oasis !
-                    <br><strong>My Sports is</strong> Basketball
-                    <br><strong>I have two cats ! </strong>
-                    <br><strong>I like to play piano in my free time</strong>
+                <p><strong>My favorite Food is</strong> Noodle
+                    <br><strong>My favorite Movie is</strong> Forrest Gump!
+                    <br><strong>My favorite Artist is</strong> The Beatles and Oasis!
+                    <br><strong>My Sport is</strong> Basketball
+                    <br><strong>I have two cats!</strong>
+                    <br><strong>I like to play the piano in my free time</strong>
                 </p>
             </div>
         </div>
@@ -241,7 +310,6 @@
         </div>
         &copy; 2023 Suphanai Jirakankun
     </footer>
-
 </body>
 
 </html>
